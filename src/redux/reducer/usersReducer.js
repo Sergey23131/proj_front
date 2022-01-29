@@ -1,25 +1,22 @@
 import {
-    UPDATE_USER,
-    LOGOUT_USER,
-    AUTH_USER,
-    REFRESH_TOKEN,
-    FORGOT_PASSWORD,
-    SET_PASSWORD
+    GET_USERS,
+    GET_USERS_BY_ID,
+    POST_USER,
+    DELETE_USER
 } from '../actions/actionTypes'
 
-export const authReducer = (state = {auth: []}, action) => {
+export const usersReducer = (state = {users: []}, action) => {
 
     switch (action.type) {
-        case AUTH_USER:
-            return {...state, auth: [...action.payload]};
-        case LOGOUT_USER:
-            return {...state, auth: [...state.auth, action.payload]};
-        case UPDATE_USER:
-            return {...state, auth: [...action.payload]};
-        case REFRESH_TOKEN:
-            return {...state, auth: [...action.payload]};
+        case GET_USERS:
+            return {...state, users: [...action.payload]};
+        case POST_USER:
+            return {...state, users: [...state.users, action.payload]};
+        case DELETE_USER:
+            return {...state, users: [...action.payload]};
         default:
             return state;
     }
 
 }
+

@@ -8,17 +8,17 @@ const basicConfig = (url) => {
 }
 
 const getUsers = () => {
-    return basicConfig('/users')
+    return basicConfig('users')
         .then(response => response.json())
 }
 
 const getUserByID = (user_id) => {
-    return basicConfig(`/users/${user_id}`)
+    return basicConfig(`users/${user_id}`)
         .then(response => response.json())
 }
 
 const postUser = (user) => {
-    return basicConfig('/users', {
+    return basicConfig('users', {
         method: 'POST',
         body: JSON.stringify(user)
     })
@@ -26,7 +26,7 @@ const postUser = (user) => {
 }
 
 const deleteUser = (user_id) => {
-    return basicConfig(`/users/${user_id}`, {
+    return basicConfig(`users/${user_id}`, {
         method: 'DELETE',
 
     })
@@ -34,7 +34,7 @@ const deleteUser = (user_id) => {
 }
 
 const authUser = (info) => {
-    return basicConfig('/auth', {
+    return basicConfig('auth', {
         method: 'POST',
         body: JSON.stringify(info)
 
@@ -42,44 +42,50 @@ const authUser = (info) => {
         .then(response => response.json())
 }
 
-const updateUser = (info) => {
-    return basicConfig('/auth/update', {
+const updateUser = (info,token) => {
+    return basicConfig('auth/update', {
         method: 'PUT',
-        body: JSON.stringify(info)
+        body: JSON.stringify(info),
+        headers: {
+            'Authorization': token,
+        },
 
     })
         .then(response => response.json())
 }
 
 const logoutUser = (token) => {
-    return basicConfig('/auth/logout', {
+    return basicConfig('auth/logout', {
         method: 'DELETE',
-        body: JSON.stringify(token)
-
+        headers: {
+            'Authorization': token,
+        }
     })
         .then(response => response.json())
 }
 
 const refreshToken = (token) => {
-    return basicConfig('/auth/refresh', {
+    return basicConfig('auth/refresh', {
         method: 'POST',
-        body: JSON.stringify(token)
-
+        headers: {
+            'Authorization': token,
+        }
     })
         .then(response => response.json())
 }
 
 const forgotPassword = (email) => {
-    return basicConfig('/auth/password/forgot', {
+    return basicConfig('auth/password/forgot', {
         method: 'POST',
-        body: JSON.stringify(email)
+        body: JSON.stringify(email),
+
 
     })
         .then(response => response.json())
 }
 
 const setPassword = (info) => {
-    return basicConfig('/auth//password/forgot/set', {
+    return basicConfig('auth//password/forgot/set', {
         method: 'POST',
         body: JSON.stringify(info)
 
