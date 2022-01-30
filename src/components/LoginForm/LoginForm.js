@@ -1,8 +1,21 @@
+import './loginForm.css'
+
 export function LoginForm() {
-    console.log('sss')
     return (
         <div className="LoginForm">
-Login
+
+            <form className={'Log-form'}>
+
+                <label htmlFor='email'> User email </label>
+                <input type="text" name={'email'}/><br/>
+
+                <label htmlFor='password'> User password </label>
+                <input type="text" name={'password'}/> <br/>
+
+                <button className={'Log_buttonForm'}>Add user</button>
+
+                <div className={'Errors'}>{}</div>
+            </form>
         </div>
     );
 }
