@@ -1,0 +1,9 @@
+.User-info{
+    display: flex;
+    margin-left: 230px;
+}
+
+
+.User-info>p{
+  width: 20%;
+}

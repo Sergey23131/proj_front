@@ -60,14 +60,13 @@ export function MainList() {
         <div className="MainList">
 
             <div className={'header_links'}>
-                <Link to={''} className={'Link_Button'}>Registration</Link>
-                <Link to={''} className={'Link_Button'}> LogIn</Link>
+                <Link to={'/Login'} className={'Link_Button'}>LogIn</Link>
             </div>
 
             <div className={'Main-box'}>
 
                 <div className={'Registration'}>
-
+                    <h3>Registration form</h3>
                     <form onSubmit={onSubmit} className={'Create-form'}>
 
                         <label htmlFor='name'> User name </label>
@@ -100,7 +99,13 @@ export function MainList() {
                     </form>
                 </div>
 
-                <div className={'userList'}>
+                <div className={'UserList'}>
+                    <div className={'User-header'}>
+                        <h3>Name</h3>
+                        <h3>NickName</h3>
+                        <h3>Age</h3>
+                        <h3>Role</h3>
+                    </div>
                     {
                         users.map((value) => <div className={'User_box'} key={value.id}><User info={value}/></div>)
                     }
