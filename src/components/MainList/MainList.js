@@ -8,7 +8,7 @@ import {getUsers, postUser} from "../../services/service";
 import {fetchUsers, fetchUserUpdate} from "../../redux/actions/actions";
 import {useEffect, useState} from "react";
 import {User} from "../User/User";
-
+import './mainList.css'
 
 export function MainList() {
     let [errors, setErrors] = useState('');
@@ -60,15 +60,15 @@ export function MainList() {
         <div className="MainList">
 
             <div className={'header_links'}>
-                <Link to={''}>Registration</Link>
-                <Link to={''}>LogIn</Link>
+                <Link to={''} className={'Link_Button'}>Registration</Link>
+                <Link to={''} className={'Link_Button'}> LogIn</Link>
             </div>
 
             <div className={'Main-box'}>
 
                 <div className={'Registration'}>
 
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={onSubmit} className={'Create-form'}>
 
                         <label htmlFor='name'> User name </label>
                         <input type="text" name={'name'}/>
@@ -90,11 +90,11 @@ export function MainList() {
 
                         <label htmlFor='role'> User type </label>
                         <select name={'role'}>
-                            <option value='driver'>User</option>
+                            <option value='user'>User</option>
                             <option value='admin'>Admin</option>
                         </select>
 
-                        <button>Add user</button>
+                        <button className={'Add_button'}>Add user</button>
 
                         <div className={'Errors'}>{errors}</div>
                     </form>

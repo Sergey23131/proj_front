@@ -1,0 +1,71 @@
+.header_links{
+    margin-left: 80%;
+    margin-top: 20px;
+}
+
+.Link_Button{
+    margin-left: 20px;
+   margin-top: 20px;
+    background: #1620c9;/*цвет фона*/
+    border-radius: 3px;/*радиус скругления*/
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;/*внутрення тень*/
+    color: #ffffff;/*цвет текста*/
+    font-family: sans-serif;/*семейство шрифта*/
+    font-size: 14px;/*размер текста*/
+    font-weight: bold;/*жирный шрифт*/
+    line-height: 1.5;/*высота строки*/
+    padding: 10px 25px;/*внутрение отступы*/
+    text-decoration: none;/*убераем подчеркивание*/
+    transition: all 0.3s;/*плавный эффект перехода*/
+}
+
+a.Link_Button:hover {
+    background: #05ebb5;/*другой цвет фона*/
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset;/*расположение тени сверху*/
+}
+
+.Main-box{
+    margin: 40px;
+}
+
+input{
+    margin: 20px;
+    width: 250px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.Create-form{
+    text-align: left;
+    justify-content: center;
+    width: 80%;
+    height: 300px;
+    flex-direction: column;
+    row-gap: 2px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 2%;
+    margin-bottom: 30px;
+    box-shadow: 5px 2px 15px -7px #888;
+}
+
+select{
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+
+.Add_button{
+    margin-left: 400px;
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 2%;
+    box-shadow: 5px 2px 15px -7px #888;
+}
