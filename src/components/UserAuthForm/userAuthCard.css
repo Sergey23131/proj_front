@@ -1,21 +1,57 @@
 
-.Log-box {
-    margin-top: 130px;
-    margin-left: 35%;
-    width: 500px;
-    height: 400px;
-    border-width: 2px;
-    border-style: solid;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 2px 15px -7px #888;
+
+.userCard {
+    display: flex;
+    background: #ab6aec;
+    padding-bottom: 50px;
+    margin: 50px 70px 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
-.Log_buttonForm {
-    margin-left: 70px;
+.LogoutButton{
+    margin-top: 5px;
+    margin-left: 1090px;
+    background: #ec0000; /*цвет фона*/
+    border-radius: 3px; /*радиус скругления*/
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
+    color: #ffffff; /*цвет текста*/
+    font-family: sans-serif; /*семейство шрифта*/
+    font-size: 14px; /*размер текста*/
+    font-weight: bold; /*жирный шрифт*/
+    line-height: 1.5; /*высота строки*/
+    padding: 9px 50px; /*внутрение отступы*/
+    text-decoration: none; /*убераем подчеркивание*/
+    transition: all 0.3s; /*плавный эффект перехода*/
+    border: 1px solid black;
+}
+
+.LogoutButton:hover {
+    background: #3c54d9; /*другой цвет фона*/
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+}
+
+.user-Info {
+    width: 70%;
+    margin-left: 30px;
+}
+
+.user-screen > img {
+    width: 400px;
     margin-top: 20px;
-    background: #953aef; /*цвет фона*/
+    margin-right: 20px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.user-Info > p {
+    width: 90%;
+}
+
+.UpdateButton {
+    margin-left: 10px;
+    margin-top: 20px;
+    background: #e3982e; /*цвет фона*/
     border-radius: 10px; /*радиус скругления*/
     box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
     color: #ffffff; /*цвет текста*/
@@ -27,46 +63,7 @@
     transition: all 0.3s;
 }
 
-button.Log_buttonForm:hover {
+button.UpdateButton:hover {
     background: #eb0542; /*другой цвет фона*/
     box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
-}
-
-.inputChange {
-    margin: 20px 20px 20px 55px;
-    width: 230px;
-    height: 40px;
-    border-radius: 6px;
-}
-
-.Log-form > label {
-    margin-left: 40px;
-
-}
-
-.Forgot_buttonForm {
-    margin-left: 120px;
-    margin-top: 20px;
-    background: #e3982e; /*цвет фона*/
-    border-radius: 10px; /*радиус скругления*/
-    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
-    color: #ffffff; /*цвет текста*/
-    font-family: sans-serif; /*семейство шрифта*/
-    font-size: 14px; /*размер текста*/
-    font-weight: bold; /*жирный шрифт*/
-    line-height: 1.5; /*высота строки*/
-    padding: 20px 75px; /*внутрение отступы*/
-    transition: all 0.3s;
-}
-
-button.Forgot_buttonForm:hover {
-    background: #eb0542; /*другой цвет фона*/
-    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
-}
-
-.loginInput{
-    margin: 20px;
-    width: 230px;
-    height: 40px;
-    border-radius: 6px;
 }

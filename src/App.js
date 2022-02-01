@@ -10,6 +10,7 @@ import {MainList} from "./components/MainList/MainList";
 import {LoginForm} from "./components/LoginForm/LoginForm";
 import {UserAuth} from "./components/UserAuthForm/UserAuthList";
 import './App.css'
+import {UserCard} from "./components/UserCard/UserCard";
 
 
 export function App() {
@@ -23,6 +24,9 @@ export function App() {
 
                     <Route path={"/auth/:id"} render={(props) =>{
                         return <UserAuth {...props}/>}}/>
+
+                    <Route path={"/user/:id"} render={(props) =>{
+                        return <UserCard{...props}/>}}/>
 
                     <Route exact path={'/MainList'} component={MainList}/>
                     <Redirect exact to="/MainList"/>

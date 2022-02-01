@@ -2,6 +2,9 @@ import {useState} from "react";
 import {updateUser} from "../../services/service";
 import {useHistory} from "react-router";
 
+import './UpdateForm.css'
+
+
 export function UpdateForm({updateState}) {
     let [errors, setErrors] = useState('');
 
@@ -37,10 +40,10 @@ export function UpdateForm({updateState}) {
         <div className="UpdateForm">
             <form onSubmit={onSubmit}>
                 <label htmlFor='name'> User name </label>
-                <input type="text" name={'name'}/><br/>
+                <input type="text" name={'name'} className={'UpdateInfo'}/><br/>
 
                 <label htmlFor='phoneNumber'> User phone </label>
-                <input type="text" name={'phoneNumber'}/><br/>
+                <input type="text" name={'phoneNumber'} className={'UpdateInfo'}/><br/>
 
                 <button className={'UpdateButton'}>Update</button>
 

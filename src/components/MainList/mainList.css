@@ -4,7 +4,7 @@
 }
 
 .Link_Button {
-    margin-left: 100px;
+    margin-left: 80px;
     margin-top: 20px;
     background: #1620c9; /*цвет фона*/
     border-radius: 3px; /*радиус скругления*/
@@ -14,7 +14,7 @@
     font-size: 14px; /*размер текста*/
     font-weight: bold; /*жирный шрифт*/
     line-height: 1.5; /*высота строки*/
-    padding: 10px 25px; /*внутрение отступы*/
+    padding: 10px 40px; /*внутрение отступы*/
     text-decoration: none; /*убераем подчеркивание*/
     transition: all 0.3s; /*плавный эффект перехода*/
 }
@@ -28,11 +28,13 @@ a.Link_Button:hover {
     margin: 40px;
 }
 
-input {
+.mainInput {
     margin: 20px;
     width: 300px;
     height: 40px;
     border-radius: 6px;
+    padding-left: 5px;
+    font-size: 17px;
 }
 
 label {
@@ -44,6 +46,9 @@ label {
     display: flex;
 }
 
+.Registration>h3{
+    margin-left: 40px;
+}
 
 .Create-form {
     width: 90%;
@@ -59,15 +64,18 @@ label {
 }
 
 select {
+    padding-left: 5px;
     margin: 20px;
-    width: 100px;
-    height: 40px;
+    width: 300px;
+    height: 45px;
     border-radius: 6px;
+    font-size: 17px;
 }
 
 
 .Add_button {
     margin-top: 140px;
+    margin-left: 40px;
     background: #953aef; /*цвет фона*/
     border-radius: 10px; /*радиус скругления*/
     box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
@@ -88,11 +96,13 @@ select {
 
 .User-header > h3 {
     width: 50px;
-    margin-left: 200px;
+    margin-left: 193px;
 }
 
 .UserList {
+    margin-top: 10px;
     margin-left: 100px;
+    margin-right: 55px;
 }
 
 .Errors {
@@ -112,4 +122,8 @@ select {
 
 .third-box {
     width: 40%;
+}
+
+option{
+    font-size: 17px;
 }

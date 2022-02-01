@@ -1,9 +1,19 @@
 .User-info{
     display: flex;
-    margin-left: 220px;
+    background-color: rgba(229, 232, 239, 0.64);
+    font-size: 15px;
+    padding-left: 230px;
+
 }
+
+.User-info:hover {
+    background-color: #9c91c7;
+}
+
+
 
 
 .User-info>p{
   width: 23%;
+
 }

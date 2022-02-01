@@ -69,32 +69,35 @@ export function MainList() {
                     <form onSubmit={onSubmit} className={'Create-form'}>
                         <div className={'form-box'}>
                             <div className={'first-box'}>
-                                <label htmlFor='name'> User name </label><br/>
-                                <input type="text" name={'name'}/><br/>
+                                <label htmlFor='name'> <b>User name</b> </label><br/>
+                                <input type="text" name={'name'} className={'mainInput'} placeholder={'Name'}/><br/>
 
-                                <label htmlFor='nickName'> User nickName </label><br/>
-                                <input type="text" name={'nickName'}/><br/>
+                                <label htmlFor='nickName'> <b>User nickName</b> </label><br/>
+                                <input type="text" name={'nickName'} className={'mainInput'}
+                                       placeholder={'NickName'}/><br/>
 
-                                <label htmlFor='age'> User age </label><br/>
-                                <input type="text" name={'age'}/><br/>
+                                <label htmlFor='age'><b>User age</b> </label><br/>
+                                <input type="text" name={'age'} className={'mainInput'} placeholder={'Age'}/><br/>
                             </div>
 
                             <div className={'second-box'}>
-                                <label htmlFor='phoneNumber'> User phone </label><br/>
-                                <input type="text" name={'phoneNumber'}/><br/>
+                                <label htmlFor='phoneNumber'><b>User phone</b> </label><br/>
+                                <input type="text" name={'phoneNumber'} className={'mainInput'}
+                                       placeholder={'PhoneNumber'}/><br/>
 
-                                <label htmlFor='email'> User email </label><br/>
-                                <input type="text" name={'email'}/><br/>
+                                <label htmlFor='email'> <b>User email</b> </label><br/>
+                                <input type="text" name={'email'} className={'mainInput'} placeholder={'Email'}/><br/>
 
-                                <label htmlFor='password'> User password </label><br/>
-                                <input type="text" name={'password'}/><br/>
+                                <label htmlFor='password'><b>User password</b> </label><br/>
+                                <input type="text" name={'password'} className={'mainInput'}
+                                       placeholder={'Password'}/><br/>
                             </div>
 
                             <div className={'third-box'}>
-                                <label htmlFor='role'> User type </label><br/>
+                                <label htmlFor='role'><b>User type</b> </label><br/>
                                 <select name={'role'}>
-                                    <option value='user'>User</option>
-                                    <option value='admin'>Admin</option>
+                                    <option value='user'> User</option>
+                                    <option value='admin'> Admin</option>
                                 </select>
 
                                 <div className={'Errors'}>{errors}</div>

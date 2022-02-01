@@ -4,6 +4,7 @@ import {authUser} from "../../services/service";
 import {useHistory} from "react-router";
 import {fetchUserLogin, fetchUsers} from "../../redux/actions/actions";
 import {useDispatch} from "react-redux";
+import {Link} from "react-router-dom";
 
 export function LoginForm() {
     let [errors, setErrors] = useState('');
@@ -45,15 +46,18 @@ export function LoginForm() {
 
     return (
         <div className="LoginForm">
+
+            <Link to={'/MainList'} className={'BackButton'}>Back</Link>
+
             <div className={'Log-box'}>
 
                 <form className={'Log-form'} onSubmit={onSubmit}>
 
                     <label htmlFor='email'> User email </label>
-                    <input type="text" name={'email'} className={'inputChange'}/><br/>
+                    <input type="text" name={'email'} className={'inputChange'} /><br/>
 
                     <label htmlFor='password'> User password </label>
-                    <input type="text" name={'password'}/> <br/>
+                    <input type="text" name={'password'} className={'loginInput'}/> <br/>
 
                     <button className={'Log_buttonForm'}>Log in</button>
                 </form>
