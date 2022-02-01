@@ -41,15 +41,14 @@ export function MainList() {
                 role: e.target.role.value,
                 password: e.target.password.value
             }
-            console.log(user)
 
-            postUser(user).then(value => console.log(value))
+            const newUser = await postUser(user)
 
-            /* if (userfe.message) {
-                 throw new Error(userfe.message)
-             } else {
-                 setErrors('')
-             }*/
+            if (newUser.message) {
+                throw new Error(newUser.message)
+            } else {
+                setErrors('')
+            }
 
         } catch (e) {
             setErrors(e.message);
@@ -68,34 +67,42 @@ export function MainList() {
                 <div className={'Registration'}>
                     <h3>Registration form</h3>
                     <form onSubmit={onSubmit} className={'Create-form'}>
+                        <div className={'form-box'}>
+                            <div className={'first-box'}>
+                                <label htmlFor='name'> User name </label><br/>
+                                <input type="text" name={'name'}/><br/>
 
-                        <label htmlFor='name'> User name </label>
-                        <input type="text" name={'name'}/>
+                                <label htmlFor='nickName'> User nickName </label><br/>
+                                <input type="text" name={'nickName'}/><br/>
 
-                        <label htmlFor='nickName'> User nickName </label>
-                        <input type="text" name={'nickName'}/>
+                                <label htmlFor='age'> User age </label><br/>
+                                <input type="text" name={'age'}/><br/>
+                            </div>
 
-                        <label htmlFor='age'> User age </label>
-                        <input type="text" name={'age'}/><br/>
+                            <div className={'second-box'}>
+                                <label htmlFor='phoneNumber'> User phone </label><br/>
+                                <input type="text" name={'phoneNumber'}/><br/>
 
-                        <label htmlFor='phoneNumber'> User phone </label>
-                        <input type="text" name={'phoneNumber'}/>
+                                <label htmlFor='email'> User email </label><br/>
+                                <input type="text" name={'email'}/><br/>
 
-                        <label htmlFor='email'> User email </label>
-                        <input type="text" name={'email'}/>
+                                <label htmlFor='password'> User password </label><br/>
+                                <input type="text" name={'password'}/><br/>
+                            </div>
 
-                        <label htmlFor='password'> User password </label>
-                        <input type="text" name={'password'}/> <br/>
+                            <div className={'third-box'}>
+                                <label htmlFor='role'> User type </label><br/>
+                                <select name={'role'}>
+                                    <option value='user'>User</option>
+                                    <option value='admin'>Admin</option>
+                                </select>
 
-                        <label htmlFor='role'> User type </label>
-                        <select name={'role'}>
-                            <option value='user'>User</option>
-                            <option value='admin'>Admin</option>
-                        </select>
+                                <div className={'Errors'}>{errors}</div>
 
-                        <button className={'Add_button'}>Add user</button>
+                                <button className={'Add_button'}>Add user</button>
 
-                        <div className={'Errors'}>{errors}</div>
+                            </div>
+                        </div>
                     </form>
                 </div>
 

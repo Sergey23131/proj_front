@@ -7,11 +7,10 @@ import {
     SET_PASSWORD
 } from '../actions/actionTypes'
 
-export const authReducer = (state = {auth: []}, action) => {
-
+export const authReducer = (state = {auth: {}}, action) => {
     switch (action.type) {
         case AUTH_USER:
-            return {...state, auth: [...action.payload]};
+            return {...state, auth: [...action.payload.user]};
         case UPDATE_USER:
             return {...state, auth: [...state.auth, action.payload]};
         default:

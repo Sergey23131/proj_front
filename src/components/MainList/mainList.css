@@ -30,27 +30,32 @@ a.Link_Button:hover {
 
 input {
     margin: 20px;
-    width: 250px;
+    width: 300px;
     height: 40px;
     border-radius: 6px;
 }
 
 label {
     font-size: 20px;
+    margin-left: 20px;
 }
 
-.Create-form {
-    text-align: left;
-    justify-content: center;
+.form-box {
+    display: flex;
+}
 
-    height: 300px;
-    flex-direction: column;
-    row-gap: 2px;
-    background-color: white;
+
+.Create-form {
+    width: 90%;
+    margin-left: 40px;
+    background-color: #05ebb5;
     padding: 20px;
-    border-radius: 2%;
-    margin-bottom: 30px;
+    border-radius: 5px;
     box-shadow: 5px 2px 15px -7px #888;
+}
+
+.Registration {
+    margin-left: 50px;
 }
 
 select {
@@ -62,12 +67,17 @@ select {
 
 
 .Add_button {
-    margin-left: 400px;
-    width: 800px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 2%;
-    box-shadow: 5px 2px 15px -7px #888;
+    margin-top: 140px;
+    background: #953aef; /*цвет фона*/
+    border-radius: 10px; /*радиус скругления*/
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
+    color: #ffffff; /*цвет текста*/
+    font-family: sans-serif; /*семейство шрифта*/
+    font-size: 14px; /*размер текста*/
+    font-weight: bold; /*жирный шрифт*/
+    line-height: 1.5; /*высота строки*/
+    padding: 20px 160px; /*внутрение отступы*/
+    transition: all 0.3s;
 }
 
 .User-header {
@@ -81,11 +91,25 @@ select {
     margin-left: 200px;
 }
 
-.Registration {
-    width: 1400px;
+.UserList {
     margin-left: 100px;
 }
 
-.UserList {
-    margin-left: 100px;
+.Errors {
+    color: #eb0505;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.first-box {
+    width: 30%;
+
+}
+
+.second-box {
+    width: 30%;
+}
+
+.third-box {
+    width: 40%;
 }

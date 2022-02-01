@@ -1,0 +1,48 @@
+.UserAuth{
+    margin: 70px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1px;
+}
+
+.userCard{
+    display: flex;
+    background: #953aef;
+    padding-bottom:50px;
+}
+.user-Info{
+    width: 70%;
+    margin-left: 30px;
+}
+
+.user-screen>img{
+    width: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.user-Info>p{
+    width: 90%;
+}
+
+.UpdateButton{
+margin-left: 10px;
+    margin-top: 20px;
+    background: #e3982e; /*цвет фона*/
+    border-radius: 10px; /*радиус скругления*/
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
+    color: #ffffff; /*цвет текста*/
+    font-family: sans-serif; /*семейство шрифта*/
+    font-size: 14px; /*размер текста*/
+    font-weight: bold; /*жирный шрифт*/
+    line-height: 1.5; /*высота строки*/
+    padding: 20px 160px; /*внутрение отступы*/
+    transition: all 0.3s;
+}
+
+button.UpdateButton:hover {
+    background: #eb0542; /*другой цвет фона*/
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+}

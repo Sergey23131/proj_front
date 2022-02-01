@@ -1,0 +1,61 @@
+
+.Log-box {
+    margin-top: 130px;
+    margin-left: 35%;
+    width: 500px;
+    height: 400px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 15px -7px #888;
+
+}
+
+.Log_buttonForm {
+    margin-left: 70px;
+    margin-top: 20px;
+    background: #953aef; /*цвет фона*/
+    border-radius: 10px; /*радиус скругления*/
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
+    color: #ffffff; /*цвет текста*/
+    font-family: sans-serif; /*семейство шрифта*/
+    font-size: 14px; /*размер текста*/
+    font-weight: bold; /*жирный шрифт*/
+    line-height: 1.5; /*высота строки*/
+    padding: 20px 160px; /*внутрение отступы*/
+    transition: all 0.3s;
+}
+
+button.Log_buttonForm:hover {
+    background: #eb0542; /*другой цвет фона*/
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+}
+
+.inputChange {
+    margin-left: 55px;
+}
+
+.Log-form > label {
+    margin-left: 40px;
+}
+
+.Forgot_buttonForm {
+    margin-left: 120px;
+    margin-top: 20px;
+    background: #e3982e; /*цвет фона*/
+    border-radius: 10px; /*радиус скругления*/
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
+    color: #ffffff; /*цвет текста*/
+    font-family: sans-serif; /*семейство шрифта*/
+    font-size: 14px; /*размер текста*/
+    font-weight: bold; /*жирный шрифт*/
+    line-height: 1.5; /*высота строки*/
+    padding: 20px 75px; /*внутрение отступы*/
+    transition: all 0.3s;
+}
+
+button.Forgot_buttonForm:hover {
+    background: #eb0542; /*другой цвет фона*/
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+}
