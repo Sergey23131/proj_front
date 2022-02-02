@@ -8,27 +8,26 @@ import './UpdateForm.css'
 export function UpdateForm({updateState}) {
     let [errors, setErrors] = useState('');
 
-    const history = useHistory()
+    const history = useHistory();
 
     const onSubmit = async (e) => {
         try {
-            e.preventDefault()
+            e.preventDefault();
 
             const updateInfo = {
                 name: e.target.name.value,
                 phoneNumber: e.target.phoneNumber.value
             }
 
-            const updatedUser = await updateUser(updateInfo, localStorage.access_token)
-
+            const updatedUser = await updateUser(updateInfo, localStorage.access_token);
 
             if (updatedUser.message) {
-                throw new Error(updatedUser.message)
+                throw new Error(updatedUser.message);
             } else {
                 setErrors('')
             }
 
-            await updateState()
+            await updateState();
 
             history.push('/auth/' + localStorage.user_id)
         } catch (e) {
@@ -43,7 +42,8 @@ export function UpdateForm({updateState}) {
                 <input type="text" name={'name'} className={'UpdateInfo'} placeholder={'New name'}/><br/>
 
                 <label htmlFor='phoneNumber'> User phone </label>
-                <input type="text" name={'phoneNumber'} className={'UpdateInfo'} placeholder={'+380'} value={'+380'}/><br/>
+                <input type="text" name={'phoneNumber'} className={'UpdateInfo'} placeholder={'+380'}
+                       value={'+380'}/><br/>
 
                 <button className={'UpdateButton'}>Update</button>
 

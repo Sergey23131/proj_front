@@ -1,14 +1,13 @@
 import {
-    Switch,
-    Route,
     Link,
-} from "react-router-dom"
+} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {getUsers, postUser} from "../../services/service";
-import {fetchUsers, fetchUserUpdate} from "../../redux/actions/actions";
 import {useEffect, useState} from "react";
+import {getUsers, postUser} from "../../services/service";
+import {fetchUsers} from "../../redux/actions/actions";
 import {User} from "../User/User";
-import './mainList.css'
+
+import './mainList.css';
 
 export function MainList() {
     let [errors, setErrors] = useState('');
@@ -24,7 +23,7 @@ export function MainList() {
 
     useEffect(() => {
         getUsers().then(value => {
-            dispatch(fetchUsers(value))
+            dispatch(fetchUsers(value));
         })
     }, [users]);
 
@@ -42,12 +41,12 @@ export function MainList() {
                 password: e.target.password.value
             }
 
-            const newUser = await postUser(user)
+            const newUser = await postUser(user);
 
             if (newUser.message) {
-                throw new Error(newUser.message)
+                throw new Error(newUser.message);
             } else {
-                setErrors('')
+                setErrors('');
             }
 
         } catch (e) {

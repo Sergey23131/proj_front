@@ -2,18 +2,16 @@ import './loginForm.css'
 import {useState} from "react";
 import {authUser} from "../../services/service";
 import {useHistory} from "react-router";
-import {fetchUserLogin, fetchUsers} from "../../redux/actions/actions";
 import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 
 export function LoginForm() {
     let [errors, setErrors] = useState('');
-
+ 
     const history = useHistory();
-    const dispatch = useDispatch();
 
     const forgotButton = () => {
-        history.push('/forgotPassword')
+        history.push('/forgotPassword');
     }
 
     const onSubmit = async (e) => {
@@ -25,22 +23,22 @@ export function LoginForm() {
                 password: e.target.password.value
             }
 
-            const logination = await authUser(login)
+            const logination = await authUser(login);
 
             if (logination.message) {
-                throw new Error(logination.message)
+                throw new Error(logination.message);
             } else {
-                setErrors('')
+                setErrors('');
             }
 
-            localStorage.setItem('access_token', logination.access_token)
+            localStorage.setItem('access_token', logination.access_token);
 
-            localStorage.setItem('refresh_token', logination.refresh_token)
+            localStorage.setItem('refresh_token', logination.refresh_token);
 
-            localStorage.setItem('user_id', logination.user.id)
+            localStorage.setItem('user_id', logination.user.id);
 
 
-            history.push('/auth/' + logination.user.id)
+            history.push('/auth/' + logination.user.id);
 
         } catch (e) {
             setErrors(e.message);

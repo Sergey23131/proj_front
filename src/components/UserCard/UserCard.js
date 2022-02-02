@@ -1,11 +1,9 @@
-import {Link, Route} from "react-router-dom";
-import {UpdateForm} from "../UpdateForm/UpdateForm";
+import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {getUserByID} from "../../services/service";
 import {useParams} from "react-router";
 
 import './UserCard.css'
-
 
 export function UserCard() {
     const [user, setUser] = useState({});

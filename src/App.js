@@ -9,11 +9,11 @@ import {
 import {MainList} from "./components/MainList/MainList";
 import {LoginForm} from "./components/LoginForm/LoginForm";
 import {UserAuth} from "./components/UserAuthForm/UserAuthList";
-import './App.css'
 import {UserCard} from "./components/UserCard/UserCard";
 import {ForgotCard} from "./components/ForgotCard/ForgotCard";
 import {PasswordCard} from "./components/SetPasswordCard/PasswordCard";
 
+import './App.css'
 
 export function App() {
     return (
@@ -21,20 +21,25 @@ export function App() {
             <div className="App">
                 <Switch>
 
-                    <Route path={"/Login"} render={(props) =>{
-                        return <LoginForm {...props}/>}}/>
+                    <Route path={"/Login"} render={(props) => {
+                        return <LoginForm {...props}/>
+                    }}/>
 
-                    <Route path={"/auth/:id"} render={(props) =>{
-                        return <UserAuth {...props}/>}}/>
+                    <Route path={"/auth/:id"} render={(props) => {
+                        return <UserAuth {...props}/>
+                    }}/>
 
-                    <Route path={"/user/:id"} render={(props) =>{
-                        return <UserCard{...props}/>}}/>
+                    <Route path={"/user/:id"} render={(props) => {
+                        return <UserCard{...props}/>
+                    }}/>
 
-                    <Route path={"/forgotPassword"} render={(props) =>{
-                        return <ForgotCard{...props}/>}}/>
+                    <Route path={"/forgotPassword"} render={(props) => {
+                        return <ForgotCard{...props}/>
+                    }}/>
 
-                    <Route path={"/setForgotPassword"} render={(props) =>{
-                        return <PasswordCard{...props}/>}}/>
+                    <Route path={"/setForgotPassword"} render={(props) => {
+                        return <PasswordCard{...props}/>
+                    }}/>
 
                     <Route exact path={'/MainList'} component={MainList}/>
                     <Redirect exact to="/MainList"/>

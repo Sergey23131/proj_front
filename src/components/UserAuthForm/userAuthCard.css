@@ -11,43 +11,43 @@
 .LogoutButton {
     margin-top: 5px;
     margin-left: 1090px;
-    background: #ec0000; /*цвет фона*/
-    border-radius: 3px; /*радиус скругления*/
-    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
-    color: #ffffff; /*цвет текста*/
-    font-family: sans-serif; /*семейство шрифта*/
-    font-size: 14px; /*размер текста*/
-    font-weight: bold; /*жирный шрифт*/
-    line-height: 1.5; /*высота строки*/
-    padding: 9px 50px; /*внутрение отступы*/
-    text-decoration: none; /*убераем подчеркивание*/
-    transition: all 0.3s; /*плавный эффект перехода*/
+    background: #ec0000;
+    border-radius: 3px;
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 9px 50px;
+    text-decoration: none;
+    transition: all 0.3s;
     border: 1px solid black;
 }
 
 .LogoutButton:hover {
-    background: #3cd949; /*другой цвет фона*/
-    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+    background: #3cd949;
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
 }
 
 .deleteButton {
     margin-left: 10px;
     margin-top: 20px;
-    background: #eb0505; /*цвет фона*/
-    border-radius: 10px; /*радиус скругления*/
-    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
-    color: #ffffff; /*цвет текста*/
-    font-family: sans-serif; /*семейство шрифта*/
-    font-size: 14px; /*размер текста*/
-    font-weight: bold; /*жирный шрифт*/
-    line-height: 1.5; /*высота строки*/
-    padding: 20px 146px; /*внутрение отступы*/
+    background: #eb0505;
+    border-radius: 10px;
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 20px 146px;
     transition: all 0.3s;
 }
 
 .deleteButton:hover {
-    background: #3cd968; /*другой цвет фона*/
-    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+    background: #3cd968;
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
 }
 
 .user-Info {
@@ -74,19 +74,19 @@
 .UpdateButton {
     margin-left: 10px;
     margin-top: 20px;
-    background: #e3982e; /*цвет фона*/
-    border-radius: 10px; /*радиус скругления*/
-    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
-    color: #ffffff; /*цвет текста*/
-    font-family: sans-serif; /*семейство шрифта*/
-    font-size: 14px; /*размер текста*/
-    font-weight: bold; /*жирный шрифт*/
-    line-height: 1.5; /*высота строки*/
-    padding: 20px 160px; /*внутрение отступы*/
+    background: #e3982e;
+    border-radius: 10px;
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 20px 160px;
     transition: all 0.3s;
 }
 
 button.UpdateButton:hover {
-    background: #eb0542; /*другой цвет фона*/
-    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+    background: #eb0542;
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
 }

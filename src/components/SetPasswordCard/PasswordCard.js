@@ -4,8 +4,14 @@ import {Link} from "react-router-dom";
 
 import './PasswordCard.css';
 
-export function PasswordCard() {
+const queryString = require('query-string');
+
+export function PasswordCard({location}) {
     let [errors, setErrors] = useState('');
+
+    const parsed = queryString.parse(location.search);
+
+    const {token} = parsed;
 
     const onSubmit = async (e) => {
         try {
@@ -14,7 +20,8 @@ export function PasswordCard() {
             const password = {
                 password: e.target.password.value
             }
-            const newPassword = await setPassword(password);
+
+            const newPassword = await setPassword(password, token);
 
             if (newPassword.message) {
                 throw new Error(newPassword.message);
@@ -34,9 +41,9 @@ export function PasswordCard() {
             <div className={'PasswordBox'}>
                 <form onSubmit={onSubmit}>
                     <div className={'passwordForm'}>
-                    <label htmlFor='password' className={'passwordLabel'}><b>Enter new password</b> </label>
-                    <input type="text" name={'password'} className={'inputChange'}
-                           placeholder={' New Password'}/><br/>
+                        <label htmlFor='password' className={'passwordLabel'}><b>Enter new password</b> </label>
+                        <input type="text" name={'password'} className={'inputChange'}
+                               placeholder={' New Password'}/><br/>
                     </div>
                     <button className={'ConfirmPassword'}>Set Password</button>
 

@@ -1,24 +1,24 @@
 .BackButton {
     margin-left: 70px;
-    background: #000000; /*цвет фона*/
-    border-radius: 3px; /*радиус скругления*/
-    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
-    color: #ffffff; /*цвет текста*/
-    font-family: sans-serif; /*семейство шрифта*/
-    font-size: 14px; /*размер текста*/
-    font-weight: bold; /*жирный шрифт*/
-    line-height: 1.5; /*высота строки*/
-    padding: 12px 50px; /*внутрение отступы*/
-    text-decoration: none; /*убераем подчеркивание*/
-    transition: all 0.3s; /*плавный эффект перехода*/
+    background: #000000;
+    border-radius: 3px;
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 12px 50px;
+    text-decoration: none;
+    transition: all 0.3s;
     border: 1px solid black;
 
 }
 
 a.BackButton:hover {
-    background: #ffffff; /*другой цвет фона*/
+    background: #ffffff;
     color: black;
-    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
 }
 
 .UserCard {

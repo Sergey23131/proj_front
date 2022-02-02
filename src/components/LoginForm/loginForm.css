@@ -15,21 +15,21 @@
 .Log_buttonForm {
     margin-left: 70px;
     margin-top: 20px;
-    background: #953aef; /*цвет фона*/
-    border-radius: 10px; /*радиус скругления*/
-    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
-    color: #ffffff; /*цвет текста*/
-    font-family: sans-serif; /*семейство шрифта*/
-    font-size: 14px; /*размер текста*/
-    font-weight: bold; /*жирный шрифт*/
-    line-height: 1.5; /*высота строки*/
-    padding: 20px 160px; /*внутрение отступы*/
+    background: #953aef;
+    border-radius: 10px;
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 20px 160px;
     transition: all 0.3s;
 }
 
 button.Log_buttonForm:hover {
-    background: #eb0542; /*другой цвет фона*/
-    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+    background: #eb0542;
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
 }
 
 .inputChange {
@@ -47,24 +47,24 @@ button.Log_buttonForm:hover {
 .Forgot_buttonForm {
     margin-left: 120px;
     margin-top: 20px;
-    background: #e3982e; /*цвет фона*/
-    border-radius: 10px; /*радиус скругления*/
-    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
-    color: #ffffff; /*цвет текста*/
-    font-family: sans-serif; /*семейство шрифта*/
-    font-size: 14px; /*размер текста*/
-    font-weight: bold; /*жирный шрифт*/
-    line-height: 1.5; /*высота строки*/
-    padding: 20px 75px; /*внутрение отступы*/
+    background: #e3982e;
+    border-radius: 10px;
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 20px 75px;
     transition: all 0.3s;
 }
 
 button.Forgot_buttonForm:hover {
-    background: #eb0542; /*другой цвет фона*/
-    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+    background: #eb0542;
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset;
 }
 
-.loginInput{
+.loginInput {
     margin: 20px;
     width: 230px;
     height: 40px;
