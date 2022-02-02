@@ -82,7 +82,7 @@ export function MainList() {
                             <div className={'second-box'}>
                                 <label htmlFor='phoneNumber'><b>User phone</b> </label><br/>
                                 <input type="text" name={'phoneNumber'} className={'mainInput'}
-                                       placeholder={'+380'} value={'+380'}/><br/>
+                                       placeholder={'+380'}/><br/>
 
                                 <label htmlFor='email'> <b>User email</b> </label><br/>
                                 <input type="text" name={'email'} className={'mainInput'} placeholder={'Email'}/><br/>

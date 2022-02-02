@@ -3,11 +3,14 @@ import {setPassword} from "../../services/service";
 import {Link} from "react-router-dom";
 
 import './PasswordCard.css';
+import {useHistory} from "react-router";
 
 const queryString = require('query-string');
 
 export function PasswordCard({location}) {
     let [errors, setErrors] = useState('');
+
+    const history = useHistory();
 
     const parsed = queryString.parse(location.search);
 
@@ -22,6 +25,8 @@ export function PasswordCard({location}) {
             }
 
             const newPassword = await setPassword(password, token);
+
+            history.push('/MainList');
 
             if (newPassword.message) {
                 throw new Error(newPassword.message);

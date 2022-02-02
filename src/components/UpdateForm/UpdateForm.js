@@ -42,8 +42,7 @@ export function UpdateForm({updateState}) {
                 <input type="text" name={'name'} className={'UpdateInfo'} placeholder={'New name'}/><br/>
 
                 <label htmlFor='phoneNumber'> User phone </label>
-                <input type="text" name={'phoneNumber'} className={'UpdateInfo'} placeholder={'+380'}
-                       value={'+380'}/><br/>
+                <input type="text" name={'phoneNumber'} className={'UpdateInfo'} placeholder={'+380'}/><br/>
 
                 <button className={'UpdateButton'}>Update</button>
 

@@ -1,11 +1,14 @@
 import {Link} from "react-router-dom";
 import {forgotPassword} from "../../services/service";
 import {useState} from "react";
+import {useHistory} from "react-router";
 
 import './forgotCard.css'
 
 export function ForgotCard() {
     let [errors, setErrors] = useState('');
+
+    const history = useHistory();
 
     const onSubmit = async (e) => {
         try {
@@ -16,6 +19,8 @@ export function ForgotCard() {
             }
 
             const setPassword = await forgotPassword(email);
+
+            history.push('/MainList');
 
             if (setPassword.message) {
                 throw new Error(setPassword.message);
