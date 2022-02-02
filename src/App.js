@@ -11,6 +11,8 @@ import {LoginForm} from "./components/LoginForm/LoginForm";
 import {UserAuth} from "./components/UserAuthForm/UserAuthList";
 import './App.css'
 import {UserCard} from "./components/UserCard/UserCard";
+import {ForgotCard} from "./components/ForgotCard/ForgotCard";
+import {PasswordCard} from "./components/SetPasswordCard/PasswordCard";
 
 
 export function App() {
@@ -27,6 +29,12 @@ export function App() {
 
                     <Route path={"/user/:id"} render={(props) =>{
                         return <UserCard{...props}/>}}/>
+
+                    <Route path={"/forgotPassword"} render={(props) =>{
+                        return <ForgotCard{...props}/>}}/>
+
+                    <Route path={"/setForgotPassword"} render={(props) =>{
+                        return <PasswordCard{...props}/>}}/>
 
                     <Route exact path={'/MainList'} component={MainList}/>
                     <Redirect exact to="/MainList"/>

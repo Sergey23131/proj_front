@@ -40,10 +40,10 @@ export function UpdateForm({updateState}) {
         <div className="UpdateForm">
             <form onSubmit={onSubmit}>
                 <label htmlFor='name'> User name </label>
-                <input type="text" name={'name'} className={'UpdateInfo'}/><br/>
+                <input type="text" name={'name'} className={'UpdateInfo'} placeholder={'New name'}/><br/>
 
                 <label htmlFor='phoneNumber'> User phone </label>
-                <input type="text" name={'phoneNumber'} className={'UpdateInfo'}/><br/>
+                <input type="text" name={'phoneNumber'} className={'UpdateInfo'} placeholder={'+380'} value={'+380'}/><br/>
 
                 <button className={'UpdateButton'}>Update</button>
 

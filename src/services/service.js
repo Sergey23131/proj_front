@@ -95,12 +95,11 @@ const forgotPassword = (email) => {
         .then((response) => response.json())
 }
 
-const setPassword = (password, token) => {
+const setPassword = (password) => {
     return fetch(url + 'auth//password/forgot/set', {
         method: 'POST',
         body: JSON.stringify(password),
         headers: {
-            'Authorization': token,
             'Content-type': 'application/json; charset=UTF-8'
         }
     })

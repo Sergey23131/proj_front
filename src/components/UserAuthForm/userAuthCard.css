@@ -1,5 +1,4 @@
 
-
 .userCard {
     display: flex;
     background: #ab6aec;
@@ -9,7 +8,7 @@
 
 }
 
-.LogoutButton{
+.LogoutButton {
     margin-top: 5px;
     margin-left: 1090px;
     background: #ec0000; /*цвет фона*/
@@ -27,7 +26,27 @@
 }
 
 .LogoutButton:hover {
-    background: #3c54d9; /*другой цвет фона*/
+    background: #3cd949; /*другой цвет фона*/
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+}
+
+.deleteButton {
+    margin-left: 10px;
+    margin-top: 20px;
+    background: #eb0505; /*цвет фона*/
+    border-radius: 10px; /*радиус скругления*/
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
+    color: #ffffff; /*цвет текста*/
+    font-family: sans-serif; /*семейство шрифта*/
+    font-size: 14px; /*размер текста*/
+    font-weight: bold; /*жирный шрифт*/
+    line-height: 1.5; /*высота строки*/
+    padding: 20px 146px; /*внутрение отступы*/
+    transition: all 0.3s;
+}
+
+.deleteButton:hover {
+    background: #3cd968; /*другой цвет фона*/
     box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
 }
 
@@ -42,6 +61,10 @@
     margin-right: 20px;
     border-width: 2px;
     border-style: solid;
+}
+
+.user-screen {
+    padding-left: 250px;
 }
 
 .user-Info > p {

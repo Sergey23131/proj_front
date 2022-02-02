@@ -12,6 +12,9 @@ export function LoginForm() {
     const history = useHistory();
     const dispatch = useDispatch();
 
+    const forgotButton = () => {
+        history.push('/forgotPassword')
+    }
 
     const onSubmit = async (e) => {
         try {
@@ -54,7 +57,7 @@ export function LoginForm() {
                 <form className={'Log-form'} onSubmit={onSubmit}>
 
                     <label htmlFor='email'> User email </label>
-                    <input type="text" name={'email'} className={'inputChange'} /><br/>
+                    <input type="text" name={'email'} className={'inputChange'}/><br/>
 
                     <label htmlFor='password'> User password </label>
                     <input type="text" name={'password'} className={'loginInput'}/> <br/>
@@ -62,7 +65,7 @@ export function LoginForm() {
                     <button className={'Log_buttonForm'}>Log in</button>
                 </form>
 
-                <button className={'Forgot_buttonForm'}>Forgot Password</button>
+                <button className={'Forgot_buttonForm'} onClick={forgotButton}>Forgot Password</button>
 
                 <div className={'Errors'}>{errors}</div>
             </div>

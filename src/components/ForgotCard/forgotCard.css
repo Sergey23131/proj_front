@@ -1,0 +1,39 @@
+.ConfirmMail{
+    margin-left: 70px;
+    margin-top: 20px;
+    background: #287df8; /*цвет фона*/
+    border-radius: 10px; /*радиус скругления*/
+    box-shadow: 0 -3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*внутрення тень*/
+    color: #ffffff; /*цвет текста*/
+    font-family: sans-serif; /*семейство шрифта*/
+    font-size: 14px; /*размер текста*/
+    font-weight: bold; /*жирный шрифт*/
+    line-height: 1.5; /*высота строки*/
+    padding: 18px 130px; /*внутрение отступы*/
+    transition: all 0.3s;
+}
+
+.ConfirmMail:hover {
+    background: #32f522; /*другой цвет фона*/
+    box-shadow: 0 3px 0 0 hsla(0, 0%, 0%, 0.2) inset; /*расположение тени сверху*/
+}
+
+.forgotBox{
+    margin-top: 130px;
+    margin-left: 34%;
+    width: 500px;
+    height: 280px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 15px -7px #888;
+}
+
+.forgotLabel{
+    padding-left: 40px;
+}
+
+.forgotBox>p{
+    padding-left: 10px;
+}

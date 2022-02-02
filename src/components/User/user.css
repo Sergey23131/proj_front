@@ -1,8 +1,9 @@
-.User-info{
+.User-info {
     display: flex;
     background-color: rgba(229, 232, 239, 0.64);
     font-size: 15px;
     padding-left: 230px;
+
 
 }
 
@@ -11,9 +12,11 @@
 }
 
 
+.User-info > p {
+    width: 23%;
 
+}
 
-.User-info>p{
-  width: 23%;
-
+.User>a{
+    text-decoration: none;
 }
